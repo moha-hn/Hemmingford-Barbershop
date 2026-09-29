@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block title %}{{ member.name }} &middot; Hemmingford Barbershop{% endblock %}
+
+{% block content %}
+
+<a href="/#artists" class="back-link">&larr; Back to Artists</a>
+
+<div class="profile-hero">
+  <div class="profile-photo-frame">
+    <img src="{{ member.cover_photo.url }}" alt="{{ member.name }}">
+  </div>
+  <div>
+    <p class="profile-role">{{ member.get_role_display }}</p>
+    <h1 class="profile-name">{{ member.name }}</h1>
+    {% if member.bio %}
+      <p class="profile-bio">{{ member.bio }}</p>
+    {% endif %}
+    {% if member.instagram_link %}
+      <p style="margin-top:1.5rem;">
+        <a href="{{ member.instagram_link }}" target="_blank" rel="noopener" class="btn">View on Instagram</a>
+      </p>
+    {% endif %}
+    <p style="margin-top:1rem;">
+      <a href="https://barberhemmingford.resurva.com/book" target="_blank" rel="noopener" class="btn btn-solid">Book with {{ member.name }}</a>
+    </p>
+  </div>
+</div>
+
+{% if member.photos.all or member.videos.all %}
+<div class="gallery-grid">
+  {% for photo in member.photos.all %}
+    <img src="{{ photo.image.url }}" alt="{{ member.name }} - photo">
+  {% endfor %}
+  {% for video in member.videos.all %}
+    {% if video.video_file %}
+      <video src="{{ video.video_file.url }}" controls></video>
+    {% elif video.video_url %}
+      <a href="{{ video.video_url }}" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;background:var(--green-panel);border-radius:3px;aspect-ratio:1;">
+        &#9654; View Video
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+
+{% endblock %}

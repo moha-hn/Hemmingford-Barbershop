@@ -1,0 +1,194 @@
+# French translations for Hemmingford Barbershop
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Team"
+msgstr "Équipe"
+
+msgid "Our Story"
+msgstr "Notre histoire"
+
+msgid "Gallery"
+msgstr "Galerie"
+
+msgid "Reviews"
+msgstr "Avis"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Book Now"
+msgstr "Réserver"
+
+msgid "Built in 1891 &middot; Serving Valleyfield to Saint-Jean to Richelieu since 2022"
+msgstr "Construit en 1891 &middot; Au service de Valleyfield, Saint-Jean et Richelieu depuis 2022"
+
+msgid "Where Style Meets Craftsmanship"
+msgstr "Là où le style rencontre le savoir-faire"
+
+msgid "Barbering, Hair, Tattoos, Esthetics & Tanning — All Under One Roof."
+msgstr "Coiffure, tatouage, esthétique et bronzage — tout sous un même toit."
+
+msgid "Book an Appointment"
+msgstr "Prendre rendez-vous"
+
+msgid "Our Story"
+msgstr "Notre histoire"
+
+msgid "Community, Craftsmanship, Growth"
+msgstr "Communauté, savoir-faire, croissance"
+
+msgid "At Hemmingford Barbershop, we're more than a barbershop. We're a team of skilled professionals dedicated to helping you look and feel your best. From precision barbering and hairstyling to tattoos, esthetics, and tanning, everything you need is under one roof."
+msgstr "Chez Hemmingford Barbershop, nous sommes plus qu'un simple barbershop. Nous sommes une équipe de professionnels qualifiés dévoués à vous aider à être et à vous sentir au meilleur de vous-même. De la coupe de précision à la coiffure, en passant par le tatouage, l'esthétique et le bronzage, tout ce dont vous avez besoin se trouve sous un même toit."
+
+msgid "Since opening in 2022 with one team member, we've grown into a team of nine professionals serving clients from Valleyfield, Saint-Jean, Richelieu, and beyond. Every client who walks through our doors is welcomed like family. Located in a character-filled building dating back to 1891, our space blends historic charm with a modern experience."
+msgstr "Depuis notre ouverture en 2022 avec un seul membre, nous sommes devenus une équipe de neuf professionnels au service de clients de Valleyfield, Saint-Jean, Richelieu et au-delà. Chaque client qui franchit nos portes est accueilli comme un membre de la famille. Installé dans un bâtiment chargé d'histoire datant de 1891, notre espace allie charme d'époque et expérience moderne."
+
+msgid "Artists on the Team"
+msgstr "Artistes dans l'équipe"
+
+msgid "5-Star Reviews"
+msgstr "Avis 5 étoiles"
+
+msgid "Years of Growth"
+msgstr "Années de croissance"
+
+msgid "Regions We Serve"
+msgstr "Régions desservies"
+
+msgid "What We Do"
+msgstr "Nos services"
+
+msgid "Barber"
+msgstr "Barbier"
+
+msgid "Classic & modern haircuts"
+msgstr "Coupes classiques et modernes"
+
+msgid "Beard trim & shave"
+msgstr "Taille de barbe et rasage"
+
+msgid "Kids' cuts"
+msgstr "Coupes pour enfants"
+
+msgid "Hair"
+msgstr "Coiffure"
+
+msgid "Women's cuts & styling"
+msgstr "Coupes et coiffures pour femmes"
+
+msgid "Coloring"
+msgstr "Coloration"
+
+msgid "Tattoo"
+msgstr "Tatouage"
+
+msgid "Custom tattoo work"
+msgstr "Tatouages sur mesure"
+
+msgid "Private tattoo room"
+msgstr "Salle de tatouage privée"
+
+msgid "Esthetics"
+msgstr "Esthétique"
+
+msgid "Lashes"
+msgstr "Cils"
+
+msgid "Brows"
+msgstr "Sourcils"
+
+msgid "See the full menu & pricing when you book your appointment."
+msgstr "Consultez la liste complète des services et les prix lors de votre réservation."
+
+msgid "Meet the Team"
+msgstr "Rencontrez l'équipe"
+
+msgid "Our Artists"
+msgstr "Nos artistes"
+
+msgid "Our artist profiles are being added — check back soon."
+msgstr "Les profils de nos artistes sont en cours d'ajout — revenez bientôt."
+
+msgid "See Our Work"
+msgstr "Notre travail"
+
+msgid "Fades"
+msgstr "Dégradés"
+
+msgid "Beard Trims"
+msgstr "Tailles de barbe"
+
+msgid "Tattoos"
+msgstr "Tatouages"
+
+msgid "Hair Coloring"
+msgstr "Coloration"
+
+msgid "Interior"
+msgstr "Intérieur"
+
+msgid "What Clients Say"
+msgstr "Ce que disent nos clients"
+
+msgid "\"He's not just a barber, he's a true artist of hair and beard work. He's meticulous, attentive to what his clients ask for, and truly takes the time to deliver flawless results. And the decor? An incredible retro vibe! Alongside men's and women's cuts, you'll also find a tanning booth, a tattoo artist, and an esthetician.\""
+msgstr "« Ce n'est pas seulement un barbier, c'est un véritable artiste des cheveux et de la barbe. Il est minutieux, attentif aux demandes de ses clients et prend vraiment le temps de faire un travail impeccable. Que dire aussi du décor? Une ambiance rétro incroyable! En plus des coupes pour hommes et femmes, on y retrouve une cabine de bronzage, un tatoueur et une esthéticienne. »"
+
+msgid "on P-A"
+msgstr "à propos de P-A"
+
+msgid "\"Noemy did an amazing job! Her technique is absolutely breathtaking! So professional and friendly. The shop has an awesome vibe, very clean. Also very reasonably priced for how talented she is!\""
+msgstr "« Noemy a fait un travail incroyable! Sa technique est absolument à couper le souffle! Très professionnelle et sympathique. L'ambiance du salon est géniale, très propre. Les prix sont aussi très raisonnables compte tenu de son talent! »"
+
+msgid "on Noemy"
+msgstr "à propos de Noemy"
+
+msgid "\"Got a cut from Andrew, he did a phenomenal job, I highly recommended going there for your next cut.\""
+msgstr "« J'ai eu une coupe avec Andrew, il a fait un travail exceptionnel, je recommande fortement d'y aller pour votre prochaine coupe. »"
+
+msgid "on Andrew"
+msgstr "à propos d'Andrew"
+
+msgid "\"A big thank you to Jay for his excellent work. He took the time to advise me on the cut that suited me best and the result is perfect. Professional service, attention to detail, and a great atmosphere.\""
+msgstr "« Un gros merci à Jay pour son excellent travail. Il a pris le temps de me conseiller sur la coupe qui me convenait le mieux et le résultat est parfait. Service professionnel, attention aux détails et super ambiance. »"
+
+msgid "on Jay"
+msgstr "à propos de Jay"
+
+msgid "Ready for Your Next Appointment?"
+msgstr "Prêt pour votre prochain rendez-vous?"
+
+msgid "Find Us"
+msgstr "Nous trouver"
+
+msgid "Address"
+msgstr "Adresse"
+
+msgid "Phone"
+msgstr "Téléphone"
+
+msgid "Email"
+msgstr "Courriel"
+
+msgid "Hours"
+msgstr "Heures d'ouverture"
+
+msgid "Monday – Wednesday: 11:00 AM – 7:00 PM"
+msgstr "Lundi – Mercredi : 11 h 00 – 19 h 00"
+
+msgid "Thursday – Friday: 11:00 AM – 9:00 PM"
+msgstr "Jeudi – Vendredi : 11 h 00 – 21 h 00"
+
+msgid "Saturday – Sunday: 11:00 AM – 5:00 PM"
+msgstr "Samedi – Dimanche : 11 h 00 – 17 h 00"
+
+msgid "Instagram"
+msgstr "Instagram"

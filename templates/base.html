@@ -1,0 +1,44 @@
+{% load i18n %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Hemmingford Barbershop{% endblock %}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="/" class="brand">HEMMINGFORD <span>BARBERSHOP</span></a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <nav class="nav-links">
+      <a href="/#services">{% trans "Services" %}</a>
+      <a href="/#team">{% trans "Team" %}</a>
+      <a href="/#our-story">{% trans "Our Story" %}</a>
+      <a href="/#gallery">{% trans "Gallery" %}</a>
+      <a href="/#reviews">{% trans "Reviews" %}</a>
+      <a href="/#contact">{% trans "Contact" %}</a>
+      <a href="https://barberhemmingford.resurva.com/book" target="_blank" rel="noopener" class="nav-cta">{% trans "Book Now" %}</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-brand">HEMMINGFORD BARBERSHOP</p>
+    <p>{% blocktrans %}Built in 1891 &middot; Serving Valleyfield to Saint-Jean to Richelieu since 2022{% endblocktrans %}</p>
+    <p><a href="https://www.instagram.com/hemmingford_barber_shop/" target="_blank" rel="noopener">@hemmingford_barber_shop</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

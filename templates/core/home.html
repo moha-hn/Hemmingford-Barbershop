@@ -1,0 +1,210 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+
+<section id="home" class="hero">
+  <video class="hero-video" autoplay muted loop playsinline>
+    <source src="{% static 'video/hero_fixed.mp4' %}" type="video/mp4">
+  </video>
+  <div class="hero-content">
+    <p class="hero-eyebrow">{% trans "Where Style Meets Craftsmanship" %}</p>
+    <h1 class="hero-title">
+      HEMMINGFORD
+      <span class="stencil">BARBERSHOP</span>
+    </h1>
+    <p class="hero-sub">{% trans "Barbering, Hair, Tattoos, Esthetics & Tanning — All Under One Roof." %}</p>
+    <a href="https://barberhemmingford.resurva.com/book" target="_blank" rel="noopener" class="btn btn-solid">{% trans "Book an Appointment" %}</a>
+  </div>
+</section>
+
+<section id="our-story">
+  <div class="section-inner">
+    <p class="section-eyebrow">{% trans "Our Story" %}</p>
+    <h2 class="section-title">{% trans "Community, Craftsmanship, Growth" %}</h2>
+    <div class="story-grid">
+      <div class="story-text">
+        <p>{% blocktrans %}At Hemmingford Barbershop, we're more than a barbershop. We're a team of skilled professionals dedicated to helping you look and feel your best. From precision barbering and hairstyling to tattoos, esthetics, and tanning, everything you need is under one roof.{% endblocktrans %}</p>
+        <p>{% blocktrans %}Since opening in 2022 with one team member, we've grown into a team of nine professionals serving clients from Valleyfield, Saint-Jean, Richelieu, and beyond. Every client who walks through our doors is welcomed like family. Located in a character-filled building dating back to 1891, our space blends historic charm with a modern experience.{% endblocktrans %}</p>
+      </div>
+      <div class="stats">
+        <div class="stat-card">
+          <span class="stat-number">9</span>
+          <span class="stat-label">{% trans "Artists on the Team" %}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">300+</span>
+          <span class="stat-label">{% trans "5-Star Reviews" %}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">4</span>
+          <span class="stat-label">{% trans "Years of Growth" %}</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">3</span>
+          <span class="stat-label">{% trans "Regions We Serve" %}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="alt-bg">
+  <div class="section-inner">
+    <p class="section-eyebrow">{% trans "What We Do" %}</p>
+    <h2 class="section-title">{% trans "Services" %}</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>{% trans "Barber" %}</h3>
+        <ul>
+          <li>{% trans "Classic & modern haircuts" %}</li>
+          <li>{% trans "Beard trim & shave" %}</li>
+          <li>{% trans "Kids' cuts" %}</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>{% trans "Hair" %}</h3>
+        <ul>
+          <li>{% trans "Women's cuts & styling" %}</li>
+          <li>{% trans "Coloring" %}</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>{% trans "Tattoo" %}</h3>
+        <ul>
+          <li>{% trans "Custom tattoo work" %}</li>
+          <li>{% trans "Private tattoo room" %}</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>{% trans "Esthetics" %}</h3>
+        <ul>
+          <li>{% trans "Lashes" %}</li>
+          <li>{% trans "Brows" %}</li>
+        </ul>
+      </div>
+    </div>
+    <p class="services-note">{% trans "See the full menu & pricing when you book your appointment." %}</p>
+    <p style="text-align:center; margin-top:1.5rem;">
+      <a href="https://barberhemmingford.resurva.com/book" target="_blank" rel="noopener" class="btn">{% trans "Book Now" %}</a>
+    </p>
+  </div>
+</section>
+
+<section id="team">
+  <div class="section-inner">
+    <p class="section-eyebrow">{% trans "Meet the Team" %}</p>
+    <h2 class="section-title">{% trans "Our Artists" %}</h2>
+    {% for role_label, members in grouped.items %}
+    <div class="role-group">
+      <h3>{{ role_label }}{{ members|length|pluralize:",s" }}</h3>
+      <div class="artist-grid">
+        {% for member in members %}
+        <a href="{% url 'staff:detail' member.pk %}" class="artist-card">
+          <div class="artist-photo-wrap">
+            <img src="{{ member.cover_photo.url }}" alt="{{ member.name }}" class="artist-photo">
+          </div>
+          <p class="artist-role">{{ member.get_role_display }}</p>
+          <p class="artist-name">{{ member.name }}</p>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+    {% empty %}
+    <p>{% trans "Our artist profiles are being added — check back soon." %}</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="gallery" class="alt-bg">
+  <div class="section-inner">
+    <p class="section-eyebrow">{% trans "See Our Work" %}</p>
+    <h2 class="section-title">{% trans "Gallery" %}</h2>
+    <!-- PLACEHOLDER: replace these with real photos of cuts, tattoos, coloring, interior -->
+    <div class="gallery-grid-static">
+      <div class="gallery-placeholder">{% trans "Fades" %}</div>
+      <div class="gallery-placeholder">{% trans "Beard Trims" %}</div>
+      <div class="gallery-placeholder">{% trans "Tattoos" %}</div>
+      <div class="gallery-placeholder">{% trans "Hair Coloring" %}</div>
+      <div class="gallery-placeholder">{% trans "Esthetics" %}</div>
+      <div class="gallery-placeholder">{% trans "Interior" %}</div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="section-inner">
+    <p class="section-eyebrow">{% trans "What Clients Say" %}</p>
+    <h2 class="section-title">{% trans "Reviews" %}</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">{% blocktrans %}"He's not just a barber, he's a true artist of hair and beard work. He's meticulous, attentive to what his clients ask for, and truly takes the time to deliver flawless results. And the decor? An incredible retro vibe! Alongside men's and women's cuts, you'll also find a tanning booth, a tattoo artist, and an esthetician."{% endblocktrans %}</p>
+        <p class="review-author">&mdash; Dave Poirier, {% trans "on P-A" %}</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">{% blocktrans %}"Noemy did an amazing job! Her technique is absolutely breathtaking! So professional and friendly. The shop has an awesome vibe, very clean. Also very reasonably priced for how talented she is!"{% endblocktrans %}</p>
+        <p class="review-author">&mdash; Vanessa Lussier, {% trans "on Noemy" %}</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">{% blocktrans %}"Got a cut from Andrew, he did a phenomenal job, I highly recommended going there for your next cut."{% endblocktrans %}</p>
+        <p class="review-author">&mdash; Corey Gibeault, {% trans "on Andrew" %}</p>
+      </div>
+      <div class="review-card">
+        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+        <p class="review-text">{% blocktrans %}"A big thank you to Jay for his excellent work. He took the time to advise me on the cut that suited me best and the result is perfect. Professional service, attention to detail, and a great atmosphere."{% endblocktrans %}</p>
+        <p class="review-author">&mdash; TURBO_TACO, {% trans "on Jay" %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="alt-bg cta-section">
+  <div class="section-inner" style="text-align:center;">
+    <h2 class="section-title" style="margin-bottom:1rem;">{% trans "Ready for Your Next Appointment?" %}</h2>
+    <a href="https://barberhemmingford.resurva.com/book" target="_blank" rel="noopener" class="btn btn-solid">{% trans "Book Now" %}</a>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-eyebrow">{% trans "Find Us" %}</p>
+    <h2 class="section-title">{% trans "Contact" %}</h2>
+    <div class="contact-grid">
+      <div>
+        <div class="contact-item">
+          <h4>{% trans "Address" %}</h4>
+          <p>491 Rue Frontière<br>Hemmingford, QC J0L 1H0</p>
+        </div>
+        <div class="contact-item">
+          <h4>{% trans "Phone" %}</h4>
+          <p><a href="tel:+14502473770">+1 (450) 247-3770</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>{% trans "Email" %}</h4>
+          <p><a href="mailto:reception@hemmingfordbarbershop.com?subject=Contact%20Site%20Web">reception@hemmingfordbarbershop.com</a></p>
+        </div>
+        <div class="contact-item">
+          <h4>{% trans "Hours" %}</h4>
+          <p>
+            {% blocktrans %}Monday – Wednesday: 11:00 AM – 7:00 PM{% endblocktrans %}<br>
+            {% blocktrans %}Thursday – Friday: 11:00 AM – 9:00 PM{% endblocktrans %}<br>
+            {% blocktrans %}Saturday – Sunday: 11:00 AM – 5:00 PM{% endblocktrans %}
+          </p>
+        </div>
+        <div class="contact-item">
+          <h4>{% trans "Instagram" %}</h4>
+          <p><a href="https://www.instagram.com/hemmingford_barber_shop/" target="_blank" rel="noopener">@hemmingford_barber_shop</a></p>
+        </div>
+      </div>
+      <div class="map-embed">
+        <iframe src="https://www.google.com/maps?q=491+Rue+Fronti%C3%A8re,+Hemmingford,+QC+J0L+1H0&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}
